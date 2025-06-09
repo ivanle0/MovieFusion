@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>MovieFusion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>MovieFusion</h1>
+
+    <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search movies..." />
+        <button type="submit">Search</button>
+    </form>
+
+    <div id="movie-results"></div>
+
+    <h2>My Movie Lists</h2>
+    <div id="lists">
+        <button onclick="loadList('80s')">80s Movies</button>
+        <button onclick="loadList('90s')">90s Movies</button>
+        <button onclick="loadList('noir')">Film Noir Movies</button>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
