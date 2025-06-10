@@ -61,9 +61,11 @@ app.get('/api/tmdb/search', async (req, res) => {
 });
 
 // Start the server
+db.once('open', () => {
   app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
   });
+});
 
 
 // Examples of API calls:
